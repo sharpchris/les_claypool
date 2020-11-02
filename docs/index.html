@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Expert Witness Role Play</title>
+    <script src="http://104.131.117.15:3000/assets/modules/channel-web/inject.js"></script>
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="parent.css">
+    <link rel="stylesheet" type="text/css" href="custom_style.css">
+  </head>
+
+  <body>
+    <div class="container">
+        <h1>Expert Witness Role Play</h1>
+        <p>Chat with Les Claypool, defense attorney for Juan Herrera.<br>
+            The case file in linked in the <a href="https://ufl.instructure.com/courses/406950/assignments/4450254">Expert Witness Canvas assignment</a>.</p>
+
+        <p><button id="start">Click to open conversation window</button></p>
+
+        <p>After opening the chat, say "Hello"!</p>
+    </div>
+  </body>
+
+  <script>
+    // Initialize the chat widget
+    // Change the `botId` with the Id of the bot that should respond to the chat
+    window.botpressWebChat.init({
+      host: 'http://104.131.117.15:3000/',
+      botId: 'juan_herrera',
+      hideWidget: true
+    })
+
+  </script>
+
+  <script>
+      document.getElementById('start').addEventListener('click', () => {
+        window.botpressWebChat.sendEvent({ type: 'show' })
+      })
+  </script>   
+
+</html>

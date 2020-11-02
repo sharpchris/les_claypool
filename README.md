@@ -1,2 +1,2 @@
-# les_claypool
-Page for Juan Herrera's Defense Attorney, a role-play expert-witness for class
+# Expert Witness Role Play
+An expert witness roleplaying exercise with Juan Herrera's Defense Attorne.
